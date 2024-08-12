@@ -1,0 +1,257 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fc;
+}
+
+/* Header and Navigation */
+header {
+    background: #e0d9f2; /* Light Lavender */
+    color: #4a4a4a;
+    padding: 1rem 0;
+    border-bottom: 2px solid #dcd6e0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+nav h1 {
+    font-size: 4rem; /* Increase font size for a bolder look */
+    font-family: 'Georgia', serif; /* Use a serif font for a classic, elegant feel */
+    color: #3b2a1e; /* Dark brown color */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    letter-spacing: 0.05em; /* Slightly increase letter spacing for readability */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav h1:hover {
+    color: #6d4c41; /* Slightly lighter dark brown on hover */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5a5a5a;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #9a8eac; /* Medium Lavender */
+}
+
+/* Hero Section */
+.hero {
+    font-size: 2rem;
+    font-family: 'Georgia', serif;
+    background: #e0d9f2; /* Medium Lavender */
+    color: #6d4c41;
+    padding: 4rem 2rem;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #dcd6e0, #e9e0f1); /* Gradient effect */
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+/* About Section */
+.about {
+    background: url('images/coffee-shop.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    padding: 4rem 2rem;
+    color: #ffffff; /* White text color for contrast */
+    text-align: center;
+}
+
+.about-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay with transparency */
+    z-index: 1;
+}
+
+.about-content {
+    position: relative;
+    z-index: 2;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+/* Menu Section */
+.menu {
+    background: #f5f5f5;
+    padding: 4rem 2rem;
+}
+
+.menu h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #6d4c41;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.menu-item {
+    background: #ffffff;
+    border: 1px solid #e0d9f2;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 22%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.menu-item h3 {
+    font-size: 1.2rem;
+    color: #6d4c41;
+}
+
+.menu-item p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #9a8eac; /* Medium Lavender */
+}
+
+/* Locations Section */
+.locations {
+    background: #f5f5f5;
+    padding: 4rem 2rem;
+}
+
+.locations h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #6d4c41;
+    text-align: center;
+}
+
+.location-item {
+    background: #ffffff;
+    border: 1px solid #e0d9f2;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.location-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #6a6a6a;
+}
+
+.location-item p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.location-item p:last-of-type {
+    font-weight: bold;
+    color: #9a8eac; /* Medium Lavender */
+}
+
+/* Contact Section */
+.contact {
+    background: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #6d4c41;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.contact a {
+    color: #9a8eac; /* Medium Lavender */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #e0d9f2; /* Light Lavender */
+    color: #6d4c41;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 2px solid #dcd6e0;
+}
+
+/* Responsive Design
